@@ -22,4 +22,14 @@ router.get("/", authToken, async (req, res) => {
   }
 });
 
+router.put("/", authToken, async (req, res) => {
+  try {
+    const updatedUser = await User.findByIdAndUpdate(req.user.id, req.body, {
+      new: true,
+    });
+    res.json(updatedUser);
+  } catch (error) {
+    res.status(500).json({ error: "profile Updating Error" });
+  }
+});
 module.exports = router;
