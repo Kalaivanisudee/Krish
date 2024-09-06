@@ -2,14 +2,6 @@
 
 This project is a Node.js-based user authentication and profile management API built using Express, MongoDB, Mongoose, JWT for authentication, and bcrypt for password hashing.
 
-## App link
-
-https://mern-auth-jwt-implementation.netlify.app/
-
-## Demo
-
-https://github.com/user-attachments/assets/1e9451d2-5ed5-4b1b-a998-bd1f2bd7767f
-
 ## Features
 
 - **User Signup:** Create a new user account with username and password.
